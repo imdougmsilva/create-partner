@@ -1,0 +1,63 @@
+{
+  "name": "search-location",
+  "version": "1.0.0",
+  "description": "search-location",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r esm --inspect=0.0.0.0:9221 --nolazy --use_strict $npm_package_main",
+    "lint": "esw .",
+    "lint:watch": "npm run lint -- -w",
+    "start": "node -r esm $npm_package_main",
+    "test": "npm run test:unit",
+    "test:watch": "npm run test -- -w",
+    "test:integration": "mocha --timeout 20000 'tests/integration/**/*.spec.js' --require esm",
+    "test:integration:watch": "npm run test:integration -- -w",
+    "test:unit": "mocha 'tests/unit/**/*.spec.js' --require esm",
+    "test:unit:watch": "npm run test:unit -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmelosilva/searchLocation.git"
+  },
+  "author": "Douglas Melo",
+  "bugs": {
+    "url": "https://github.com/grupozap/searchLocation/issues"
+  },
+  "homepage": "https://github.com/grupozap/searchLocation#readme",
+  "dependencies": {
+    "@hapi/joi": "^16.1.7",
+    "agentkeepalive": "^4.0.2",
+    "body-parser": "^1.19.0",
+    "cpf-cnpj-validator": "^0.1.0",
+    "dotenv": "^7.0.0",
+    "esm": "^3.2.18",
+    "express": "4.16.4",
+    "helmet": "^3.21.2",
+    "https": "^1.0.0",
+    "https-request": "^1.1.0",
+    "lodash": "^4.17.15",
+    "pg": "^7.9.0",
+    "pg-hstore": "^2.3.2",
+    "postinstall": "^0.5.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "request-promise-native": "^1.0.7",
+    "sentry": "^0.1.2",
+    "sequelize": "^5.21.1",
+    "sequelize-cli": "^5.5.1",
+    "string-template": "^1.0.0",
+    "uuid": "^3.3.3",
+    "uuid-validate": "0.0.3",
+    "winston": "3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "5.14.1",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-watch": "4.0.2",
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10",
+    "sinon": "^7.2.7",
+    "supertest": "^4.0.2"
+  }
+}

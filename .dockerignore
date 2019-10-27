@@ -1,0 +1,4 @@
+src/node_modules
+deploy
+envfile.example
+src/lib/database.json
