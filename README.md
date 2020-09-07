@@ -1,6 +1,6 @@
 ## Architecture
 
-The code style is based in [Airbnb JS style guide](https://github.com/airbnb/javascript) as is.
+The code style is based  [Airbnb JS style guide](https://github.com/airbnb/javascript) as is.
 
 ## How to build: first of all
 ```bash
